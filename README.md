@@ -2,8 +2,8 @@ This project is intended to create a domain-specific language for CSV manipulati
 
 Every CSV file is required to be labeled table where the first row is the header row and the trable is rectangular.
 
-```
 BNF grammar:
+```
 p ::=
     | c
     | c p
