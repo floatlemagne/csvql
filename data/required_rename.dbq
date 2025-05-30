@@ -1,0 +1,11 @@
+grades := load "data/chem_grades.csv";
+
+print grades;
+
+renamed_grades := rename "exam1" to "Exam_One", "hw1" to "Homework_1" in grades;
+
+print renamed_grades;
+
+error_dup_new := rename "exam1" to "Score", "exam2" to "Score" in grades;
+error_dup_old := rename "exam1" to "E1", "exam1" to "Ex1" in grades;
+error_not_found := rename "examX" to "E1" in grades;

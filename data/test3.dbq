@@ -1,0 +1,5 @@
+a := load "data/chem_grades.csv";
+b := a;
+print b;
+c := b;
+save c "data/chem_grades2.csv";

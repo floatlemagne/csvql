@@ -1,0 +1,4 @@
+t1 := load "data/join_ex1_table1.csv";
+t2 := load "data/join_ex1_table2.csv";
+result := join t1 with t2 on "ID";
+print result;

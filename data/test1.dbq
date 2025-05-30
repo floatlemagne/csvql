@@ -1,0 +1,2 @@
+a := load "data/chem_grades.csv";
+b := a;

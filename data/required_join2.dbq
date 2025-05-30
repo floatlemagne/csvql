@@ -1,0 +1,4 @@
+employee := load "data/join_ex2_employee.csv";
+department := load "data/join_ex2_department.csv";
+result := join employee with department on "Department ID";
+print result;
